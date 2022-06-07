@@ -35,27 +35,31 @@ zien.
 
 ## Deel 2
 
-Nu iedereen in je leerteam een eigen 1 bit register heeft gemaakt zullen
-jullie je registers combineren tot een {len(leerteam)}-bits register.
-Alle inputs worden aangesloten op een IO pin van de Raspberry Pi. De
-losse set en enable inputs van de registers worden gecombineerd en ook
-aangesloten op twee pinnen van de Pi. Op de pi kan je een python-script
-schrijven om de werking van je register te demonstreren. Het zou voor de
-demo mooi zijn als je alle ledjes van de losse registers op een
-breadboard weet onder te brengen.
+
 
 ### Stap 1 (begin met 3 en 4)
+
+Maak de flip-flop met 4 NANDjes. Gebruik knopjes om deze te testen. **Vergeet hierbij geen pull down weerstanden toe te voegen *(zie Hints)***
 
 ![](images/1-bit-latch.png)
 
 ### Stap 2
 
-*De AND (of eigenlijk NNAND) kun je maken met een NAND en een NOT; een
+Maak van je flip-flop een echte geheugencel door een enabler toe te voegen. *De AND (of eigenlijk NNAND) kun je maken met een NAND en een NOT; een
 NOT kan je maken met een NAND.*
 
 ![](images/1-bit-latch-enable.png)
 
 ### Stap 3
+
+Nu iedereen in je groepje een eigen 1 bit register heeft gemaakt zullen
+jullie je registers combineren tot een {len(groep)}-bits register.
+Alle inputs worden aangesloten op een IO pin van de Raspberry Pi / Arduino. De
+losse set en enable inputs van de registers worden gecombineerd en ook
+aangesloten op twee pinnen IO pinnen. Eventueel kun je code schrijven om de
+pinnen aan te sturen en de werking van je register te demonstreren, maar dit
+kan ook met knopjes. Het zou voor de demo mooi zijn als je alle ledjes van de
+losse registers op een breadboard weet onder te brengen.
 
 ![](images/n-bit-register.png)
 
@@ -71,6 +75,8 @@ elkaar zitten.
 
 ![](images/pull-down-resistor-button.png)
 
-Als stroombron kun je de 3V3 of 5V en GND van de Raspberry Pi gebruiken:
+Als stroombron kun je de 3V3 of 5V en GND van de Raspberry Pi  gebruiken:
 
 ![](images/rpi-pinout.png)
+
+Alternatief kun je dit aansluiten op een Arduino of andere 5V stroombron.
