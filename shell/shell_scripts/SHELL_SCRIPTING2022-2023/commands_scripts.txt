@@ -1,0 +1,6 @@
+bash sorteerAfbeeldingen.sh /home/sem/Desktop
+bash voerUit.sh /home/sem/Desktop/*testfile*
+bash naarPNG.sh /home/sem/Desktop
+bash checkStatus.sh /home/sem/Desktop/bestanden cat /home/sem/Desktop/test.txt
+bash maakLogin.sh /home/sem/Desktop/test.txt
+bash ownImplementation.sh
